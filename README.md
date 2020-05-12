@@ -38,6 +38,17 @@ services:
     
 ```
 
+| 屬性名稱        |範例值            | 說明  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+<br />
+<br />
+
+
 **2. 在 docker-compose.yml 的同一層資料夾下，執行指令**
 ```sh
 $ docker-compose up -d
