@@ -39,13 +39,12 @@ services:
     
 ```
 
-
-**2. 在 docker-compose.yml 的同一層資料夾下，執行指令
+**2. 在 docker-compose.yml 的同一層資料夾下，執行指令**
 ```sh
 $ docker-compose up -d
 ```
 
-**3. 進入 container ：名稱為 oraExam
+**3. 進入 container ：名稱為 oraExam**
 ```sh
 $ docker exec -ti oraExam bash
 ```
