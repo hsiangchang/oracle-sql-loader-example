@@ -18,6 +18,27 @@
 
 **使用 Docker 建置 Oracle 測試資料庫**
 
+```yml
+version: '3'
+
+services: 
+  msk_oracle:
+    image: oracleinanutshell/oracle-xe-11g
+    container_name: oraExam
+    ports:
+      - 1533:1521
+    environment:
+      - "NLS_LANG=AMERICAN_AMERICA.UTF8"
+    volumes:
+      - ./init/0_init.sql:/docker-entrypoint-initdb.d/0_init.sql
+      - ./init/1_schema.sql:/docker-entrypoint-initdb.d/1_schema.sql
+      - ./init/users.ctl:/home/users.ctl
+      - ./init/users.dat:/home/users.dat
+      - ./init/vendors.ctl:/home/vendors.ctl
+      - ./init/vendors.dat:/home/vendors.dat
+    
+```
+
 
 1. 在 docker-compose.yml 的同一層資料夾下，執行指令
 ```sh
