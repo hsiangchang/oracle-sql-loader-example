@@ -14,11 +14,9 @@
 <br />
 <br />
 
-## 建置測試環境
+## 建置測試環境(使用 Docker 建置 Oracle 測試資料庫)
 
-**1. 使用 Docker 建置 Oracle 測試資料庫**
-
-檔案 docker-compose.yml 
+**1. docker-compose.yml**
 ```yml
 version: '3'
 
