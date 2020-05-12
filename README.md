@@ -4,4 +4,6 @@
 ---
 ## 使用工具：
 <br />
-* Docker
+
+* Docker : 建置 Oracle 的測試環境
+
