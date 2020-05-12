@@ -3,7 +3,6 @@ version: '3'
 services: 
   msk_oracle:
     image: oracleinanutshell/oracle-xe-11g
-    #image: wnameless/oracle-xe-11g
     container_name: oraExam
     ports:
       - 1533:1521
