@@ -7,3 +7,12 @@
 ## 使用工具：
 * Docker : 建置 Oracle 的測試環境
 
+### 執行指令（分隔符號範例）
+```
+sqlldr userid=demo/123456 control=users.ctl direct=TRUE parallel=TRUE
+```
+
+### 執行指令（固定長度範例）
+```
+sqlldr userid=demo/123456 control=vendors.ctl direct=TRUE parallel=TRUE
+```
