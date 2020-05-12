@@ -18,9 +18,15 @@
 
 **使用 Docker 建置 Oracle 測試資料庫**
 
+
 1. 在 docker-compose.yml 的同一層資料夾下，執行指令
 ```sh
 $ docker-compose up -d
+```
+
+2. 進入 container ：名稱為 oraExam
+```sh
+$ docker exec -ti oraExam bash
 ```
 
 
