@@ -19,7 +19,7 @@
 **使用 Docker 建置 Oracle 測試資料庫**
 
 ...在 docker-compose.yml 的同一層資料夾下，執行指令
-```bash
+```sh
 $ docker-compose up -d
 ```
 
