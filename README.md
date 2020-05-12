@@ -67,6 +67,12 @@ $ docker-compose up -d
 $ docker exec -ti oraExam bash
 ```
 
+**4. 進入 container 裡的 home 資料夾**
+```sh
+$ cd /home
+$ ls
+```
+
 
 ### 匯入檔案：分隔符號範例
 ```sh
