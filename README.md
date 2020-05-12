@@ -4,8 +4,13 @@
 
 ---
 
-## 使用工具：
-* Docker : 建置 Oracle 的測試環境
+## 建置測試環境
+* 使用 Docker 建置 Oracle 測試資料庫
+
+```
+$ docker-compose up -d
+```
+
 
 ### 執行指令（分隔符號範例）
 ```
