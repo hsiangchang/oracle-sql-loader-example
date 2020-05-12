@@ -38,11 +38,10 @@ services:
     
 ```
 
-| 屬性名稱        |範例值            | 說明  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| 屬性名稱        |屬性範例        | 說明  |
+| -------------  |:-------------:| -----:|
+| container_name | oraExam      | 非必要，為 Docker Container 的名稱，方便管理 |
+| ports          | 1533:1521    | 必要：1533 為連線的 PORT  |
 
 
 <br />
