@@ -75,7 +75,7 @@ $ docker exec -ti oraExam bash
 $ cd /home
 $ ls
 ```
-
+![](img/003.png)  
 
 ### 匯入檔案：分隔符號範例
 ```sh
