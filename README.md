@@ -85,11 +85,72 @@ $ ls
 ![](img/003.png)  
 
 ### 匯入檔案：分隔符號範例
+
+**▲ user.ctl**
+```sh
+load data
+INFILE 'users.dat'
+INTO TABLE USERS
+APPEND
+FIELDS TERMINATED BY ',' TRAILING NULLCOLS
+(ID CHAR "TO_NUMBER(:ID)",
+ NAME,
+ BIRTH DATE "YYYYMMDD")
+```
+
+**▲ user.dat**
+```sh
+1,徐日伪,19840310
+2,彭崔椰,19920617
+3,王声苔,19870402
+4,洪镰胺,19791110
+5,石粱方,20150415
+6,阮番犁,19960925
+7,莊校盅,19940716
+8,蕭颤概,19940302
+9,田竭婿,19980409
+10,蔡犯奢,19740113
+(以下省略，共500萬筆)
+```
+
+**▲ 執行匯入指令**
 ```sh
 $ sqlldr userid=demo/123456 control=users.ctl direct=TRUE parallel=TRUE
 ```
 
+<br />
+<br />
+
 ### 匯入檔案：固定長度範例
+
+**▲ user.ctl**
+```sh
+load data
+INFILE 'vendors.dat'
+INTO TABLE VENDORS
+TRUNCATE
+FIELDS TERMINATED BY ',' TRAILING NULLCOLS
+(ID POSITION(1:10) CHAR "TO_NUMBER(:ID)",
+ NAME POSITION(11:30) CHAR,
+ BIRTH POSITION(31:38) DATE "YYYYMMDD")
+```
+
+**▲ user.dat**
+```sh
+0000000001謝玫毫           19930518
+0000000002嚴闰虞           20160622
+0000000003葉柿钩           20000606
+0000000004胡翁惜           19971207
+0000000005邵摘娥           19940730
+0000000006郭惫峭           19700802
+0000000007游钟鞘           20120118
+0000000008鄭胶蠕           19730730
+0000000009馮迢勒           19950408
+0000000010蔣港冯           19910630
+(以下省略，共500萬筆)
+```
+
+**▲ 執行匯入指令**
 ```sh
 $ sqlldr userid=demo/123456 control=vendors.ctl direct=TRUE parallel=TRUE
 ```
