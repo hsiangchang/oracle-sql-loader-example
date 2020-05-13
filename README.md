@@ -75,11 +75,11 @@ $ docker exec -ti oraExam bash
 $ cd /home
 $ ls
 ```
->>>列出的檔案，為建置 Container 時匯入，提供測試使用：<br />
->>>* **users.ctl :** 為逗點分隔處理的 Control 檔
->>>* **users.dat :** 為逗點分隔處理的範例資料檔（500萬筆）
->>>* **vendors.ctl :** 為固定長度處理的 Control 檔
->>>* **vendors.dat :** 為固定長度處理的範例資料檔（500萬筆）
+**列出的檔案，為建置 Container 時匯入，提供測試使用：**<br />
+* **users.ctl :** 為逗點分隔處理的 Control 檔
+* **users.dat :** 為逗點分隔處理的範例資料檔（500萬筆）
+* **vendors.ctl :** 為固定長度處理的 Control 檔
+* **vendors.dat :** 為固定長度處理的範例資料檔（500萬筆）
 ![](img/003.png)  
 
 ### 匯入檔案：分隔符號範例
