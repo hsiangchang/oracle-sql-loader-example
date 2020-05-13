@@ -34,7 +34,7 @@ public class Main {
 				name = surnames[idx] + getLengthBig5(2);
 				birth = Calendar.getInstance();
 				birth.add(Calendar.DATE, -1 * s.nextInt(365 * 50));
-				line = rightPad("" + i, 10, "0") + rightPad(name, 20, " ") + sdf.format(birth.getTime());
+				line = leftPad("" + i, 10, "0") + rightPad(name, 20, " ") + sdf.format(birth.getTime());
 				out.append(line);
 				out.newLine();
 			}
@@ -107,6 +107,22 @@ public class Main {
 		int size = len - s.getBytes().length;
 		for (int i = 0; i < size; i++) {
 			s += c;
+		}
+		return s;
+	}
+	
+	/**
+	 * 補足位元數
+	 * 
+	 * @param s
+	 * @param len
+	 * @param c
+	 * @return
+	 */
+	public static String leftPad(String s, int len, String c) {
+		int size = len - s.getBytes().length;
+		for (int i = 0; i < size; i++) {
+			s = c + s;
 		}
 		return s;
 	}
