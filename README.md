@@ -46,9 +46,9 @@ services:
 | volumes      | 0_init.sql | 建立使用者資料庫語法 |
 |              | 1_schema.sql | 建立資料庫 TABLE 語法 |
 |              | users.ctl  | SQL Loader 的 CTL 檔 |
-|              | users.dat  | 測試資料：500筆分隔符號範例 |
+|              | users.dat  | 測試資料：100筆分隔符號範例 |
 |              | vendors.ctl  | SQL Loader 的 CTL 檔 |
-|              | vendors.dat  | 測試資料：500筆固定長度範例 |
+|              | vendors.dat  | 測試資料：100筆固定長度範例 |
 
 
 
@@ -79,9 +79,9 @@ $ ls
 ```
 **列出的檔案，為建置 Container 時匯入，提供測試使用：**<br />
 * **users.ctl :** 為逗點分隔處理的 Control 檔
-* **users.dat :** 為逗點分隔處理的範例資料檔（500萬筆）
+* **users.dat :** 為逗點分隔處理的範例資料檔（100萬筆）
 * **vendors.ctl :** 為固定長度處理的 Control 檔
-* **vendors.dat :** 為固定長度處理的範例資料檔（500萬筆）
+* **vendors.dat :** 為固定長度處理的範例資料檔（100萬筆）
 ![](img/003.png)  
 
 ### 匯入檔案：分隔符號範例
@@ -110,12 +110,12 @@ FIELDS TERMINATED BY ',' TRAILING NULLCOLS
 8,蕭颤概,19940302
 9,田竭婿,19980409
 10,蔡犯奢,19740113
-(以下省略，共500萬筆)
+(以下省略，共100萬筆)
 ```
 
 **▲ 執行匯入指令**
 ```sh
-$ sqlldr userid=demo/123456 control=users.ctl direct=TRUE parallel=TRUE
+$ sqlldr userid=demo/123456 control=users.ctl direct=TRUE
 ```
 
 <br />
@@ -147,10 +147,10 @@ FIELDS TERMINATED BY ',' TRAILING NULLCOLS
 0000000008鄭胶蠕           19730730
 0000000009馮迢勒           19950408
 0000000010蔣港冯           19910630
-(以下省略，共500萬筆)
+(以下省略，共100萬筆)
 ```
 
 **▲ 執行匯入指令**
 ```sh
-$ sqlldr userid=demo/123456 control=vendors.ctl direct=TRUE parallel=TRUE
+$ sqlldr userid=demo/123456 control=vendors.ctl direct=TRUE
 ```
