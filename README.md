@@ -120,7 +120,7 @@ $ sqlldr userid=demo/123456 control=users.ctl direct=TRUE
 
 **▲ 成功匯入 100 萬筆資料（約 1 ～ 3 秒）**
 
-![](img/004.png)
+![](img/005.png)
 
 <br />
 <br />
@@ -161,4 +161,4 @@ $ sqlldr userid=demo/123456 control=vendors.ctl direct=TRUE
 
 **▲ 成功匯入 100 萬筆資料（約 1 ～ 3 秒）**
 
-![](img/005.png)
+![](img/004.png)
