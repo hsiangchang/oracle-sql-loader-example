@@ -68,6 +68,7 @@ $ docker-compose up -d
 ```sh
 $ docker exec -ti oraExam bash
 ```
+![](img/002.png)  
 
 **4. 進入 container 裡的 home 資料夾**
 ```sh
