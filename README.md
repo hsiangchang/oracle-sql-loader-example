@@ -61,6 +61,8 @@ services:
 ```sh
 $ docker-compose up -d
 ```
+![指令](img/001.png)  
+
 
 **3. 進入 container ：名稱為 oraExam**
 ```sh
